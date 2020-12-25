@@ -31,7 +31,7 @@
     var characterMap = {};
 
     if (phrase && typeof phrase === 'string') {
-      phrase.trim().split('').forEach(function(character, index) {
+      Array.from(phrase.trim()).forEach(function(character, index) {
         if (characterMap[character]) {
           characterMap[character].push(index);
         } else {
@@ -88,7 +88,6 @@
       if (this.status === STATUSES[1] && typeof character === 'string') {
         var hit;
 
-        character = character[0].trim();
         if (character) {
           if (this.characters.indexOf(character) > -1) {
             hit = this.hits.push(character);
@@ -104,7 +103,7 @@
           if (this.hits.length === this.characters.length) {
             this.end(STATUSES[3]);
 
-          } else if (this.guesses.length === this.config.maxAttempt) {
+          } else if (this.misses.length === this.config.maxAttempt) {
             this.end(STATUSES[4]);
           }
         }
@@ -157,7 +156,7 @@
         this.characterMap[key].forEach(_addToCharactersList);
       }
 
-      return characters.join('');
+      return characters.join('‌');
     }
   };
 
