@@ -1,0 +1,33 @@
+{
+  "name": "hangman-engine",
+  "version": "0.1.1",
+  "description": "Hangman game engine",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sgtpanda/hangman-engine/"
+  },
+  "keywords": [
+    "game",
+    "hangman",
+    "engine"
+  ],
+  "author": "Sgtpanda",
+  "contributors": [
+    {
+      "name": "Tamer Aydin",
+      "url": "http://tamerayd.in"
+    }
+    {
+      "name": "Sgtpanda",
+      "url": "https://github.com/Sgtpanda/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sgtpanda/hangman-engine/issues"
+  },
+  "homepage": "https://github.com/Sgtpanda/hangman-engine",
+  "dependencies": {},
+  "devDependencies": {}
+}
