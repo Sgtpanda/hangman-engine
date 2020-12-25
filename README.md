@@ -6,9 +6,7 @@ Hangman game engine
 ## Usage
 
 ```bash
-npm install hangman-engine
-# or 
-bower install hangman-engine
+npm install git+https://github.com/Sgtpanda/hangman-engine.git
 ```
 
 ```javascript
